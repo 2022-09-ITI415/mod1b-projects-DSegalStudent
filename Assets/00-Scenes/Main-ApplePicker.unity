@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5333911e95dfd124e8ceaebaeab82128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 0}
+  applePrefab: {fileID: 4824926959437459084, guid: 8f7e7d5e4e3fd334584f273ffa32369e, type: 3}
   speed: 10
   leftAndRightEdge: 20
   chanceToChangeDirections: 0.02
@@ -330,6 +330,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8616318939289284284, guid: c2f04f352cbb83443a6eeab9801bdc29, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8616318939289284285, guid: c2f04f352cbb83443a6eeab9801bdc29, type: 3}
       propertyPath: m_RootOrder
       value: 2
