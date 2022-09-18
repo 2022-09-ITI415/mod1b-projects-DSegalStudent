@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class Basket : MonoBehaviour
 {
 
     [Header("Set Dynamically")]
 
-    public Text scoreGT;
+    public TextMeshProUGUI scoreGT;
     // Start is called before the first frame update
     void Start()
     {
         //Find a reference to the ScoreCounter GameObject
         GameObject scoreGO = GameObject.Find("ScoreCounter");
         //Get the text component of that gameobject
-        scoreGT = scoreGO.GetComponent<Text>();
+        scoreGT = scoreGO.GetComponent<TextMeshProUGUI>();
         //Set the starting number of points to 0
         scoreGT.text = "0";
         
