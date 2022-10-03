@@ -364,6 +364,63 @@ MonoBehaviour:
   launchPos: {x: 0, y: 0, z: 0}
   projectile: {fileID: 0}
   aimingMode: 0
+--- !u!1001 &1478500225
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1232334983902806402, guid: 7443ab0d32b31124aa129ed6eb87a2b5, type: 3}
+      propertyPath: m_Name
+      value: CloudAnchor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232334983902806405, guid: 7443ab0d32b31124aa129ed6eb87a2b5, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232334983902806405, guid: 7443ab0d32b31124aa129ed6eb87a2b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232334983902806405, guid: 7443ab0d32b31124aa129ed6eb87a2b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232334983902806405, guid: 7443ab0d32b31124aa129ed6eb87a2b5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232334983902806405, guid: 7443ab0d32b31124aa129ed6eb87a2b5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232334983902806405, guid: 7443ab0d32b31124aa129ed6eb87a2b5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232334983902806405, guid: 7443ab0d32b31124aa129ed6eb87a2b5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232334983902806405, guid: 7443ab0d32b31124aa129ed6eb87a2b5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232334983902806405, guid: 7443ab0d32b31124aa129ed6eb87a2b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232334983902806405, guid: 7443ab0d32b31124aa129ed6eb87a2b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232334983902806405, guid: 7443ab0d32b31124aa129ed6eb87a2b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7443ab0d32b31124aa129ed6eb87a2b5, type: 3}
 --- !u!1 &1572004184
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,12 +595,13 @@ MonoBehaviour:
   castlePos: {x: 50, y: 0, z: 0}
   castles:
   - {fileID: 8674484668840957563, guid: f7dc58ff29382c948b255b75b5304812, type: 3}
-  - {fileID: 8674484668840957563, guid: f7dc58ff29382c948b255b75b5304812, type: 3}
+  - {fileID: 8674484668840957563, guid: f89f88323514ed540bff4e7caf1fb983, type: 3}
+  - {fileID: 8674484668840957563, guid: d7a87e8ad2278934c8edca4eedc640dc, type: 3}
   level: 0
   levelMax: 0
   shotsTaken: 0
   castle: {fileID: 0}
-  mode: 0
+  mode1: 0
   showing: Show Slingshot
 --- !u!1001 &1859769654
 PrefabInstance:
@@ -643,10 +701,14 @@ PrefabInstance:
     - target: {fileID: 2618789213578336280, guid: b16dcbf6ab5e65e40a23cd76b2c23019, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1855804659}
     - target: {fileID: 2618789213578336280, guid: b16dcbf6ab5e65e40a23cd76b2c23019, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SwitchView
+      value: SwitchView1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618789213578336280, guid: b16dcbf6ab5e65e40a23cd76b2c23019, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PrototypeManager, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16dcbf6ab5e65e40a23cd76b2c23019, type: 3}

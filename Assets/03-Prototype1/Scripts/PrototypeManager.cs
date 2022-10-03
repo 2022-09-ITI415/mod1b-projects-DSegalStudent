@@ -26,7 +26,7 @@ public class PrototypeManager : MonoBehaviour
     public int levelMax;
     public int shotsTaken;
     public GameObject castle;
-    public GameMode mode = GameMode.idle;
+    public GameMode1 mode1 = GameMode1.idle;
     public string showing = "Show Slingshot";
     // Start is called before the first frame update
     void Start()
@@ -59,7 +59,7 @@ public class PrototypeManager : MonoBehaviour
         shotsTaken = 0;
 
         //reset camera
-        SwitchView("Show Both");
+        SwitchView1("Show Both");
         ProjectileLine.S.Clear();
 
         //reset goal
@@ -67,7 +67,7 @@ public class PrototypeManager : MonoBehaviour
 
         UpdateGUI();
 
-        mode = GameMode.playing;
+        mode1 = GameMode1.playing;
     }
 
     private void UpdateGUI()
@@ -83,13 +83,13 @@ public class PrototypeManager : MonoBehaviour
 
         //check for level end
 
-        if ( (mode == GameMode.playing) && Goal.goalMet)
+        if ( (mode1 == GameMode1.playing) && Goal.goalMet)
         {
             //change mode to stop checking for level end
-            mode = GameMode.LevelEnd;
+            mode1 = GameMode1.LevelEnd;
 
             //Zoom Out
-            SwitchView("Show Both");
+            SwitchView1("Show Both");
 
             //Start the next level in 2 seconds
 
@@ -110,7 +110,7 @@ public class PrototypeManager : MonoBehaviour
         StartLevel();
     }
 
-    public void SwitchView(string eView = "")
+    public void SwitchView1(string eView = "")
     {
         if (eView == "")
         {
@@ -121,7 +121,7 @@ public class PrototypeManager : MonoBehaviour
         {
             case "Show Slingshot":
                 FollowCam.POI = null;
-                uitButton.text = "Show Castle";
+                uitButton.text = "Show Hoop";
                 break;
 
             case "Show Castle":
