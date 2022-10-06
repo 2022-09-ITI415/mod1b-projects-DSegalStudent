@@ -124,7 +124,7 @@ public class PrototypeManager : MonoBehaviour
                 uitButton.text = "Show Hoop";
                 break;
 
-            case "Show Castle":
+            case "Show Hoop":
                 FollowCam.POI = S.castle;
                 uitButton.text = "Show Both";
                 break;
